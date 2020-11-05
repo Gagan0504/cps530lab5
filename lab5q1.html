@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+
+h1 {
+    margin-top: 25vh;
+    text-align: left;
+    margin-bottom: 1.5%;
+    color:black;
+    font-size: 40px;
+  }
+.button {
+    	border-radius: 15px;
+     	font-size: 30px;
+     	text-align: left;
+     	padding: 15px 20px;
+     	cursor: pointer;
+		background-color: red;
+	color: white;
+}
+a.button1{
+	display: inline-block;
+	padding: 0.35em 1.2em;
+	border: 0.1em solid black;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.15em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:350;
+	color: black;
+	text-align: left;
+	transition: all 0.2s;
+}
+a.button1:hover{
+	color:#000000;
+	background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+ a.button1{ 
+	display:block;
+	margin:0.5em auto;
+}
+} 
+
+html, body {
+	background-color: rgb(28, 231, 221);
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+p {
+	font-size: 25px;
+}
+
+</style>
+</head>
+
+
+<body>
+<div>
+<h1>Multiplication Table </h1>
+<p>Enter row and column.</p>
+<p>Note: Number of row and column should be between 3 and 12</p>
+
+<form action="lab5q1.php" method="post">
+<p>
+<br>
+No. of Rows: <input type="text" name="row">
+<br><br>
+No. of Columns: <input type="text" name="column">
+<br><br>
+<input class="popup a.button1" type="submit" value="Create Table">
+</p>
+<br><br>
+</form>
+</div>
+</body>
+</html>
